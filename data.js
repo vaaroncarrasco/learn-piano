@@ -19,6 +19,16 @@ const allChords = {
     notes: 'G#-D#-E',
     src: './chords-audio/C#m-Dbm.m4a'
   },
+  cDim: {
+    title: 'Cdim',
+    notes: 'C-D#-F#',
+    src: './chords-audio/Cdim.m4a'
+  },
+  cSharpDim: {
+    title: 'C#dim',
+    notes: 'C#-E-G',
+    src: './chords-audio/C#dim-Dbdim.m4a'
+  },
   dMajor: {
     title: 'D',
     notes: 'A-D-F#',
@@ -39,6 +49,16 @@ const allChords = {
     notes: 'F#-A#-D#',
     src: './chords-audio/D#-Ebm.m4a'
   },
+  dDim: {
+    title: 'Ddim',
+    notes: 'D-F-G#',
+    src: './chords-audio/Ddim.m4a'
+  },
+  dSharpDim: {
+    title: 'D#dim/Ebdim',
+    notes: 'F#-A-D#',
+    src: './chords-audio/D#dim-Ebdim.m4a'
+  },
   eMajor: {
     title: 'E',
     notes: 'G#-B-D',
@@ -47,6 +67,11 @@ const allChords = {
   eMinor: {
     title: 'Em',
     notes: 'G-B-D',
+    src: './chords-audio/Em.m4a'
+  },
+  eDim: {
+    title: 'Edim',
+    notes: 'G-A#-E',
     src: './chords-audio/Em.m4a'
   },
   fMajor: {
@@ -69,6 +94,16 @@ const allChords = {
     notes: 'A-C#-F#',
     src: './chords-audio/F#m-Gbm.m4a'
   },
+  fDim: {
+    title: 'Fdim',
+    notes: 'G#-B-F',
+    src: './chords-audio/Fdim.m4a'
+  },
+  fSharpDim: {
+    title: 'F#dim/Gbdim',
+    notes: 'A-C-F#',
+    src: './chords-audio/F#dim-Gbdim.m4a'
+  },
   gMajor: {
     title: 'G',
     notes: 'B-D-G',
@@ -88,6 +123,16 @@ const allChords = {
     title: 'G#m/Abm',
     notes: 'B-D#-G#',
     src: './chords-audio/G#m-Abm.m4a'
+  },
+  gDim: {
+    title: 'Gdim',
+    notes: 'A#-C#-G',
+    src: './chords-audio/Gdim.m4a'
+  },
+  gSharpDim: {
+    title: 'G#dim/Abdim',
+    notes: 'B-D-G#',
+    src: './chords-audio/G#dim-Abdim.m4a'
   },
   aMajor: {
     title: 'A',
@@ -109,6 +154,16 @@ const allChords = {
     notes: 'F-A#-Db',
     src: './chords-audio/A#m-Bbm.m4a'
   },
+  aDim: {
+    title: 'Adim',
+    notes: 'A-C-D#',
+    src: './chords-audio/Adim.m4a'
+  },
+  aSharpDim: {
+    title: 'A#dim/Bbdim',
+    notes: 'A#-C#-E',
+    src: './chords-audio/A#dim-Bbdim.m4a'
+  },
   bMajor: {
     title: 'B',
     notes: 'F#-B-D#',
@@ -118,6 +173,11 @@ const allChords = {
     title: 'Am',
     notes: 'F#-B-D',
     src: './chords-audio/Bm.m4a'
+  },
+  bDim: {
+    title: 'Bdim',
+    notes: 'B-D-F',
+    src: './chords-audio/Bdim.m4a'
   },
 
 }
