@@ -1,4 +1,4 @@
-const allChords = {
+const chords = {
   cMajor: {
     title: 'C',
     notes: 'G-C-E',
@@ -179,5 +179,214 @@ const allChords = {
     notes: 'B-D-F',
     src: './chords-audio/Bdim.m4a'
   },
+}
 
+const keys = {
+  C: [
+    chords.cMajor,
+    chords.dMinor,
+    chords.eMinor,
+    chords.fMajor,
+    chords.gMajor,
+    chords.aMinor,
+    chords.bDim
+  ],
+  Cm: [
+    chords.cMinor,
+    chords.dDim,
+    chords.dSharp, // Eb == D#
+    chords.fMinor,
+    chords.gMinor,
+    chords.gSharp, // Ab == G#
+    chords.aSharp // A# == Bb
+  ],
+  Cs: [
+    chords.cSharp,
+    chords.dSharpMinor,
+    chords.fMinor,
+    chords.fSharp,
+    chords.gSharp,
+    chords.aSharpMinor,
+    chords.cDim
+  ],
+  Csm: [
+    chords.cSharpMinor,
+    chords.dSharpDim,
+    chords.eMajor,
+    chords.fSharpMinor,
+    chords.gSharpMinor,
+    chords.aMajor,
+    chords.bMajor
+  ],
+  D: [
+    chords.dMajor,
+    chords.eMinor,
+    chords.fSharpMinor,
+    chords.gMajor,
+    chords.aMajor,
+    chords.bMinor,
+    chords.cSharpDim
+  ],
+  Dm: [
+    chords.dMinor,
+    chords.eDim,
+    chords.fMajor,
+    chords.gMinor,
+    chords.aMinor,
+    chords.aSharpMinor,
+    chords.cMajor
+  ],
+  Ds: [
+    chords.dSharp,
+    chords.fMinor,
+    chords.gMinor,
+    chords.gSharp,
+    chords.aSharp,
+    chords.cMinor,
+    chords.dDim
+  ],
+  Dsm: [
+    chords.dSharpMinor,
+    chords.fDim,
+    chords.fSharp,
+    chords.gSharpMinor,
+    chords.aSharpMinor,
+    chords.bMajor,
+    chords.cSharp
+  ],
+  E: [
+    chords.eMajor,
+    chords.fSharpMinor,
+    chords.gSharpMinor,
+    chords.aMajor,
+    chords.bMajor,
+    chords.cSharpMinor,
+    chords.dSharpDim
+  ],
+  F: [
+    chords.fMajor,
+    chords.gMinor,
+    chords.aMinor,
+    chords.aSharp,
+    chords.cMajor,
+    chords.dMinor,
+    chords.eDim
+  ],
+  Fm: [
+    chords.fMinor,
+    chords.gDim,
+    chords.gSharp,
+    chords.aSharpMinor,
+    chords.cMinor,
+    chords.cSharpMinor,
+    chords.dSharp
+  ],
+  Fs: [
+    chords.fSharp,
+    chords.gSharpMinor,
+    chords.aSharpMinor,
+    chords.bMajor,
+    chords.cSharp,
+    chords.dSharpMinor,
+    chords.fDim
+  ],
+  Fsm: [
+    chords.fSharpMinor,
+    chords.gSharpDim,
+    chords.aMajor,
+    chords.bMinor,
+    chords.cSharpMinor,
+    chords.dMajor,
+    chords.eMajor
+  ],
+  G: [
+    chords.gMajor,
+    chords.aMinor,
+    chords.bMinor,
+    chords.cMajor,
+    chords.dMajor,
+    chords.eMinor,
+    chords.fSharpDim
+  ],
+  Gm: [
+    chords.gMinor,
+    chords.aDim,
+    chords.aSharp,
+    chords.cMinor,
+    chords.dMinor,
+    chords.dSharp,
+    chords.fMajor
+  ],
+  Gs: [
+    chords.gSharp,
+    chords.aSharpMinor,
+    chords.cMinor,
+    chords.cSharp,
+    chords.dSharp,
+    chords.fMinor,
+    chords.gDim
+  ],
+  Gsm: [
+    chords.gSharpMinor,
+    chords.aSharpDim,
+    chords.bMajor,
+    chords.cSharpMinor,
+    chords.dSharpMinor,
+    chords.eMajor,
+    chords.fSharp
+  ],
+  A: [
+    chords.aMajor,
+    chords.bMinor,
+    chords.cSharpMinor,
+    chords.dMajor,
+    chords.eMajor,
+    chords.fSharpMinor,
+    chords.gSharpDim
+  ],
+  Am: [
+    chords.aMinor,
+    chords.bDim,
+    chords.cMajor,
+    chords.dMinor,
+    chords.eMinor,
+    chords.fMajor,
+    chords.gMajor
+  ],
+  As: [
+    chords.aSharp,
+    chords.cMinor,
+    chords.dMinor,
+    chords.dSharp,
+    chords.fMajor,
+    chords.gMinor,
+    chords.aDim
+  ],
+  Asm: [
+    chords.aSharpMinor,
+    chords.cDim,
+    chords.cSharp,
+    chords.dSharpMinor,
+    chords.fMinor,
+    chords.fSharp,
+    chords.gSharp
+  ],
+  B: [
+    chords.bMajor,
+    chords.cSharpMinor,
+    chords.dSharpMinor,
+    chords.eMajor,
+    chords.fSharp,
+    chords.gSharpMinor,
+    chords.aSharpDim
+  ],
+  Bm: [
+    chords.bMinor,
+    chords.cSharpDim,
+    chords.dMajor,
+    chords.eMinor,
+    chords.fSharpMinor,
+    chords.gMajor,
+    chords.aMajor
+  ],
 }
