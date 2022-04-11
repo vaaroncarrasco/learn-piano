@@ -10,14 +10,14 @@ const chords = {
     src: './chords-audio/Cm.m4a'
   },
   cSharp: {
-    title: 'C#/Db',
+    title: 'Cs_Db',
     notes: 'G#-C#-F',
-    src: './chords-audio/C#-Db.m4a'
+    src: './chords-audio/Cs-Db.m4a'
   },
   cSharpMinor: {
-    title: 'C#m/Dbm',
+    title: 'Csm_Dbm',
     notes: 'G#-D#-E',
-    src: './chords-audio/C#m-Dbm.m4a'
+    src: './chords-audio/Csm-Dbm.m4a'
   },
   cDim: {
     title: 'Cdim',
@@ -25,9 +25,9 @@ const chords = {
     src: './chords-audio/Cdim.m4a'
   },
   cSharpDim: {
-    title: 'C#dim',
+    title: 'Csdim_Dbdim',
     notes: 'C#-E-G',
-    src: './chords-audio/C#dim-Dbdim.m4a'
+    src: './chords-audio/Csdim-Dbdim.m4a'
   },
   dMajor: {
     title: 'D',
@@ -40,14 +40,14 @@ const chords = {
     src: './chords-audio/Dm.m4a'
   },
   dSharp: {
-    title: 'D#/Eb',
+    title: 'Ds_Eb',
     notes: 'G-A#-D#',
-    src: './chords-audio/D#-Eb.m4a'
+    src: './chords-audio/Ds-Eb.m4a'
   },
   dSharpMinor: {
-    title: 'D#m/Ebm',
+    title: 'Dsm_Ebm',
     notes: 'F#-A#-D#',
-    src: './chords-audio/D#-Ebm.m4a'
+    src: './chords-audio/Ds-Ebm.m4a'
   },
   dDim: {
     title: 'Ddim',
@@ -55,9 +55,9 @@ const chords = {
     src: './chords-audio/Ddim.m4a'
   },
   dSharpDim: {
-    title: 'D#dim/Ebdim',
+    title: 'Dsdim_Ebdim',
     notes: 'F#-A-D#',
-    src: './chords-audio/D#dim-Ebdim.m4a'
+    src: './chords-audio/Dsdim-Ebdim.m4a'
   },
   eMajor: {
     title: 'E',
@@ -85,14 +85,14 @@ const chords = {
     src: './chords-audio/Fm.m4a'
   },
   fSharp: {
-    title: 'F#/Gb',
+    title: 'Fs_Gb',
     notes: 'A#-C#-F#',
-    src: './chords-audio/F#-Gb.m4a'
+    src: './chords-audio/Fs-Gb.m4a'
   },
   fSharpMinor: {
-    title: 'F#m/Gbm',
+    title: 'Fsm_Gbm',
     notes: 'A-C#-F#',
-    src: './chords-audio/F#m-Gbm.m4a'
+    src: './chords-audio/Fsm-Gbm.m4a'
   },
   fDim: {
     title: 'Fdim',
@@ -100,9 +100,9 @@ const chords = {
     src: './chords-audio/Fdim.m4a'
   },
   fSharpDim: {
-    title: 'F#dim/Gbdim',
+    title: 'Fsdim_Gbdim',
     notes: 'A-C-F#',
-    src: './chords-audio/F#dim-Gbdim.m4a'
+    src: './chords-audio/Fsdim-Gbdim.m4a'
   },
   gMajor: {
     title: 'G',
@@ -115,14 +115,14 @@ const chords = {
     src: './chords-audio/Gm.m4a'
   },
   gSharp: {
-    title: 'G#/Ab',
+    title: 'Gs_Ab',
     notes: 'C-D#-G#',
-    src: './chords-audio/G#-Ab.m4a'
+    src: './chords-audio/Gs-Ab.m4a'
   },
   gSharpMinor: {
-    title: 'G#m/Abm',
+    title: 'Gsm_Abm',
     notes: 'B-D#-G#',
-    src: './chords-audio/G#m-Abm.m4a'
+    src: './chords-audio/Gsm-Abm.m4a'
   },
   gDim: {
     title: 'Gdim',
@@ -130,9 +130,9 @@ const chords = {
     src: './chords-audio/Gdim.m4a'
   },
   gSharpDim: {
-    title: 'G#dim/Abdim',
+    title: 'Gsdim_Abdim',
     notes: 'B-D-G#',
-    src: './chords-audio/G#dim-Abdim.m4a'
+    src: './chords-audio/Gsdim-Abdim.m4a'
   },
   aMajor: {
     title: 'A',
@@ -145,14 +145,14 @@ const chords = {
     src: './chords-audio/Am.m4a'
   },
   aSharp: {
-    title: 'A#/Bb',
+    title: 'As_Bb',
     notes: 'F-A#-D',
-    src: './chords-audio/A#-Bb.m4a'
+    src: './chords-audio/As-Bb.m4a'
   },
   aSharpMinor: {
-    title: 'A#m/Bbm',
+    title: 'Asm_Bbm',
     notes: 'F-A#-Db',
-    src: './chords-audio/A#m-Bbm.m4a'
+    src: './chords-audio/Asm-Bbm.m4a'
   },
   aDim: {
     title: 'Adim',
@@ -160,9 +160,9 @@ const chords = {
     src: './chords-audio/Adim.m4a'
   },
   aSharpDim: {
-    title: 'A#dim/Bbdim',
+    title: 'Asdim_Bbdim',
     notes: 'A#-C#-E',
-    src: './chords-audio/A#dim-Bbdim.m4a'
+    src: './chords-audio/Asdim-Bbdim.m4a'
   },
   bMajor: {
     title: 'B',
@@ -170,7 +170,7 @@ const chords = {
     src: './chords-audio/B.m4a'
   },
   bMinor: {
-    title: 'Am',
+    title: 'Bm',
     notes: 'F#-B-D',
     src: './chords-audio/Bm.m4a'
   },
