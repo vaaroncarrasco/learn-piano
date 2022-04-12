@@ -28,10 +28,10 @@ const renderButtons = ({ chords }) => {
    chords.forEach(chord => {
 
     htmlChords += `
-      <div onclick="playChord(${chord.title})">
+      <button class="btn" onclick="playChord(${chord.title})">
         <h1>${chord.title.replace('_','/')}</h1>
         <p>${chord.notes}</p>
-      </div>
+      </button>
     `
   });
 
