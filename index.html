@@ -5,19 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn Piano Chords</title>
+
+  <!-- ROBOTO FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎹</text></svg>">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>Learn Piano</h1>
-    <a href="#">Tutorial</a>
+    <h1>Learn Piano Chords</h1>
     <!-- PIANO CSS Art -->
+    <div class="canvas">
+      <!-- CSS ART CODE -->
+      <p>cssart</p>
+    </div>
+    <a href="#">Tutorial</a>
   </header>
 
-  <section>
+  <section class="container">
 
-    <div>
+    <div class="selector">
       <label for="key-select">Key:</label>
       <select id="key-select">
         <option value="">Select a Key</option>
@@ -25,11 +39,9 @@
       </select>
     </div>
 
-    <div id="key-container">
+    <div class="chords" id="key-container">
       <!-- Buttons added from script.js -->
     </div>
-
-
 
   </section>
 
