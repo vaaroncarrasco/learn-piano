@@ -4,8 +4,6 @@ const keySelect = document.getElementById('key-select');
 const keyContainer = document.getElementById('key-container');
 
 const playChord = (chord) => {
-  console.log(chord.id)
-  console.log(chord)
   const chordElement = document.getElementById(chord.id);
   chordElement.play();
 }
