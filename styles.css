@@ -36,7 +36,7 @@ header {
 }
 
 .container {
-  width: 75vw;
+  width: 50vw;
 }
 
 .chords{
@@ -65,4 +65,31 @@ header {
 
 footer {
   margin-bottom: 2rem;
+}
+
+/* PIANO CSS */
+
+.canvas {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.white {
+  width: 10vmin;
+  height: 20vmin;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.black {
+  width: 5vmin;
+  height: 10vmin;
+  background-color: black;
+  margin-left: -3vmin;
+  margin-right: -3vmin;
+  z-index: 2;
+}
+
+.active {
+  background-color: red;
 }
