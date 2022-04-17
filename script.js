@@ -5,6 +5,7 @@ const keyContainer = document.getElementById('key-container');
 
 const playChord = (chord) => {
   const chordElement = document.getElementById(chord.id);
+  chordElement.currentTime = 0;
   chordElement.play();
 }
 
