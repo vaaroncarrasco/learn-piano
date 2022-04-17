@@ -2,19 +2,40 @@
 const footer = document.getElementById('footer');
 const keySelect = document.getElementById('key-select');
 const keyContainer = document.getElementById('key-container');
+const cssKeyNotes = document.querySelectorAll('div[data-note]');
 
+console.log(cssKeyNotes);
+
+// fn to play the chord audio
 const playChord = (chord) => {
-  const chordElement = document.getElementById(chord.id);
-  chordElement.currentTime = 0;
-  chordElement.play();
+  chord.currentTime = 0;
+  chord.play();
+  const keys = chord.dataset.notes.split('-');
+  toggleKeys(keys)
 }
 
+// fn to toggle active class in the CSS Piano keys
+const toggleKeys = (keys) => { // keys['C','D','E']
+
+  cssKeyNotes.forEach(keyNote => {
+    keyNote.classList.remove('active');
+  })
+
+  keys.forEach((key) => {
+    let selector = `div[data-note=${key}]`;
+    let keyNote = document.querySelector(selector);
+    keyNote.classList.add('active')
+  })
+}
+
+// Inserting audio in HTML
 Object.entries(chords).map(chord => {
   footer.insertAdjacentHTML('afterend', `
-    <audio id="${chord[1].title}" src="${chord[1].src}"></audio>
+    <audio id="${chord[1].title}" data-notes="${chord[1].notes}" src="${chord[1].src}"></audio>
   `);
 });
 
+// Inserting key options in HTML
 Object.entries(keys).map(key => {
   keySelect.insertAdjacentHTML('beforeend', `
     <option value="${key[0]}">${key[0]}</option>
