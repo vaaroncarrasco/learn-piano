@@ -93,3 +93,7 @@ footer {
 .active {
   background-color: red;
 }
+
+a {
+  color: #f8f9fa;
+}
