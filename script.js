@@ -1,13 +1,10 @@
-
 const footer = document.getElementById('footer');
 const keySelect = document.getElementById('key-select');
 const keyContainer = document.getElementById('key-container');
 const cssKeyNotes = document.querySelectorAll('div[data-note]');
 
-console.log(cssKeyNotes);
-
 // fn to play the chord audio
-const playChord = (chord) => {
+const playChord = (chord) => { // chord -> <audio></audio>
   chord.currentTime = 0;
   chord.play();
   const keys = chord.dataset.notes.split('-');
@@ -28,27 +25,13 @@ const toggleKeys = (keys) => { // keys['C','D','E']
   })
 }
 
-// Inserting audio in HTML
-Object.entries(chords).map(chord => {
-  footer.insertAdjacentHTML('afterend', `
-    <audio id="${chord[1].title}" data-notes="${chord[1].notes}" src="${chord[1].src}"></audio>
-  `);
-});
-
-// Inserting key options in HTML
-Object.entries(keys).map(key => {
-  keySelect.insertAdjacentHTML('beforeend', `
-    <option value="${key[0]}">${key[0]}</option>
-  `)
-})
-
+// fn to render chord buttons from key
 const renderButtons = ({ chords }) => {
 
   keyContainer.innerHTML = '';
   let htmlChords = '';
 
-   chords.forEach(chord => {
-
+  chords.forEach(chord => {
     htmlChords += `
       <button class="btn" onclick="playChord(${chord.title})">
         <h1>${chord.title.replace('_','/')}</h1>
@@ -58,9 +41,23 @@ const renderButtons = ({ chords }) => {
   });
 
   keyContainer.insertAdjacentHTML('beforeend', htmlChords);
-
 }
 
+// Inserting audio tags in HTML // chords is from data.js
+Object.entries(chords).map(chord => {
+  footer.insertAdjacentHTML('afterend', `
+    <audio id="${chord[1].title}" data-notes="${chord[1].notes}" src="${chord[1].src}"></audio>
+  `);
+});
+
+// Inserting key options in HTML // keys is from data.js
+Object.entries(keys).map(key => {
+  keySelect.insertAdjacentHTML('beforeend', `
+    <option value="${key[0]}">${key[0]}</option>
+  `)
+})
+
+// Key selector event listener -> change rendered buttons
 keySelect.addEventListener('change', (e) => {
 
   let selectedKey = e.target.value;

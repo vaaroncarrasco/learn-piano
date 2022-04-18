@@ -42,9 +42,7 @@ header {
 .chords{
   display: grid;
   grid-gap: 1rem;
-
   margin-top: 2rem;
-
 }
 
 .btn {
@@ -58,13 +56,14 @@ header {
   background-color: #f8f9fa;
   color: #141414;
   border: 1px solid #f8f9fa;
-
-  /* height: 5rem; */
-  /* width: 5rem; */
 }
 
 footer {
   margin-bottom: 2rem;
+}
+
+a {
+  color: #f8f9fa;
 }
 
 /* PIANO CSS */
@@ -92,8 +91,4 @@ footer {
 
 .active {
   background-color: red;
-}
-
-a {
-  color: #f8f9fa;
 }
