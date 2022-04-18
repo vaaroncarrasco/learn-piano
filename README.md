@@ -1,8 +1,13 @@
-# Learn Piano Chords
+# Learn Piano
 ### Made by @_aaroncarrasco
 
-This is the MVP of my little JS project. I'll be improving the styles of it I promise lol.
+How to use it:
+1. Select a Key
+2. Play a chord
+3. Watch the notes turning red
+4. Enjoy
 
-I'm planning to add a CSS Art of a Piano and some logic with it, like turning some tiles red depending on which chord is being played, you know?
+This is the MVP of my little JS project. I'll be improving the styles I promise lol
 
-So stay tuned :]
+Thanks :]
+
