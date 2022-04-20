@@ -33,7 +33,7 @@ const renderButtons = ({ chords }) => {
 
   chords.forEach(chord => {
     htmlChords += `
-      <button class="btn" onclick="playChord(${chord.title})">
+      <button class="btn fade-in" onclick="playChord(${chord.title})">
         <h1>${chord.title.replace('_','/')}</h1>
         <p>${chord.notes}</p>
       </button>
